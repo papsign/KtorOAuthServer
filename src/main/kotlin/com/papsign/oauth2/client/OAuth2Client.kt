@@ -8,6 +8,5 @@ interface OAuth2Client<O: OAuth2ResourceOwner> {
     val public: Boolean
     val allowedScopes: Set<String>
     val allowedRedirectURIs: List<Regex>
-
     val clientResourceOwner: O?
 }
